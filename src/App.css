@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #1E1E1E;
+  position: relative;
   height: 100vh;
   width: 100%;
   border: solid 20px #141414
@@ -9,6 +10,23 @@ body {
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
+  font-size: 4.5vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+h3 {
+  font-size: 3.5vw;
+}
+
+h4 {
+  font-size: 3vw;
+}
+
+p {
+  font-size: 2vw;
 }
 
 h2, h3, h4, h5 {
@@ -59,9 +77,11 @@ a {
 }
 
 .vert-align {
-  height: calc(100vh - 40px);
-  vertical-align: middle;
-  margin-top: 10%;
+  width: calc(100%);
+  height: calc(100% - 20px);
+  margin: auto;
+  position: absolute;
+  top: 0px; left: 0px; bottom: 20px; right: 0px;
 }
 
 .under-name{
@@ -77,6 +97,7 @@ a {
 .social-box {
   width: 50px;
   height: 50px;
+  background-color: #1C1C1C;
   border: solid #909090 2px;
   margin-bottom: 0px;
 }
@@ -152,6 +173,7 @@ a {
   height: 50px;
   border: solid #909090 2px;
   cursor: pointer;
+  background-color: #1C1C1C
 }
 
 .next-text {
@@ -318,20 +340,20 @@ span.badge.new {
   padding: 5px;
   line-height: 40px;
   font-weight: 900;
-  color: black;
+  color: #141414;
   background-color:#00FFCD;
 }
 
 .website {
   text-decoration: none;
-  color:#00D3FF
+  color:#9E9E9E;
+  word-wrap: break-word;
 }
 
 .yosemite-bg {
   background-image: url("yosemite.JPG");
   height: calc(100vh - 40px);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
@@ -343,16 +365,36 @@ span.badge.new {
   z-index: 2;
 }
 
+.yosemite-bg:hover {
+  background-image: url("yosemite.JPG");
+  height: calc(100vh - 40px);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  opacity: 1;
+  -moz-opacity: 100%;
+  -webkit-opacity: 100%;
+  z-index: 2;
+}
+
 form {
   z-index: 3;
 }
 
 .form-bg {
   background-color: #1C1C1C;
-  margin-top: 8%;
-  width: 30%;
+  width: 100%;
 }
 
 .form-padding {
   padding: 35px;
+}
+
+.btn {
+  background-color: #00FFCD;
+  border-radius: 0px;
+  color: #141414
 }

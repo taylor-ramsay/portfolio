@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import LinkedInLogo from './LinkedInLogo.png'
-import GitHubLogo from './GitHubLogo.png'
 import resume from './Taylor_Ramsay_Web_Dev_18.pdf'
+import { Link } from 'react-router-dom'
 
 class componentName extends Component {
     render() {
@@ -22,11 +21,10 @@ class componentName extends Component {
                     </h3>
                     <br />
                     <h4>Looking for my next adventure...</h4>
-
                     <div className="social-wrapper">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tayloramsay/"><div className="social-box tooltipped linkedin" data-position="left" data-tooltip="Add me on LinkedIn"></div></a>
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/taylor-ramsay"><div className="social-box tooltipped github" data-position="left" data-tooltip="See what I'm working on"><img className="github" /></div></a>
-                        <a href="#"><div className="social-box tooltipped" data-position="left" data-tooltip="Get in touch"><i className="material-icons email">mail_outline</i></div></a>
+                        <Link to="/contact-me" onClick={()=>{this.props.clickOnContactMe()}}><div className="social-box tooltipped" data-position="left" data-tooltip="Get in touch"><i className="material-icons email">mail_outline</i></div></Link>
                         <a href={resume} target="_blank"><div className="social-box tooltipped" data-position="left" data-tooltip="Download my Resume"><h3 className="cv">CV</h3></div></a>
                     </div>
                 </div>
