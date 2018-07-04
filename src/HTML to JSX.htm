@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://magic.reactjs.net/htmltojsx.htm -->
+<html><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>HTML to JSX</title>
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:title" content="HTML to JSX">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://facebook.github.io/react/img/logo_og.png">
+  <link rel="stylesheet" href="./HTML to JSX_files/codemirror.min.css">
+  <link rel="stylesheet" href="./HTML to JSX_files/react.css">
+  <link rel="stylesheet" href="./HTML to JSX_files/syntax.css">
+</head>
+<body cz-shortcut-listen="true">
+  <div class="jsxCompiler">
+    <h1>HTML to JSX Compiler</h1>
+    <div id="jsxCompiler"><div data-reactroot=""><div id="options"><label><input type="checkbox"><!-- react-text: 5 -->Create class<!-- /react-text --></label><label><!-- react-text: 7 -->· Class name:<!-- /react-text --><input type="text"></label></div><div class="playground"><div><div class="playground-tab playground-tab-active">Live HTML Editor</div></div><div class="playgroundCode"><div class="playgroundStage"><textarea style="display: none;">&lt;!-- Hello world --&gt;
+&lt;div class="awesome" style="border: 1px solid red"&gt;
+  &lt;label for="name"&gt;Enter your name: &lt;/label&gt;
+  &lt;input type="text" id="name" /&gt;
+&lt;/div&gt;
+&lt;p&gt;Enter your HTML here&lt;/p&gt;</textarea><div class="CodeMirror cm-s-solarized-light CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 279px; left: 66.5px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px; pointer-events: none;"><div style="height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px; pointer-events: none; display: block; bottom: 0px;"><div style="width: 1px; height: 863px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 863px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><div style="width: 50px; height: 50px; overflow-x: scroll;"></div></div><div style="position: relative; z-index: 1; display: none;"><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 2px; width: 594px; height: 15px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 97px; width: 210.938px; height: 15px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 17px; width: 594px; height: 80px;"></div></div><div class="CodeMirror-code" style=""><pre>  &lt;div class="row"&gt;</pre><pre> &nbsp;  &lt;form class="col s12"&gt;</pre><pre> &nbsp; &nbsp;  &lt;div class="row"&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;div class="input-field col s6"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input placeholder="Placeholder" id="first_name" type="text" class="validate"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label for="first_name"&gt;First Name&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;div class="input-field col s6"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input id="last_name" type="text" class="validate"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label for="last_name"&gt;Last Name&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp;  &lt;div class="row"&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;div class="input-field col s12"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input disabled value="I am not editable" id="disabled" type="text" class="validate"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label for="disabled"&gt;Disabled&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp;  &lt;div class="row"&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;div class="input-field col s12"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input id="password" type="password" class="validate"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label for="password"&gt;Password&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp;  &lt;div class="row"&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;div class="input-field col s12"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input id="email" type="email" class="validate"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label for="email"&gt;Email&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp;  &lt;div class="row"&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;div class="col s12"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  This is an inline input field:</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;div class="input-field inline"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input id="email_inline" type="email" class="validate"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label for="email_inline"&gt;Email&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;span class="helper-text" data-error="wrong" data-success="right"&gt;Helper text&lt;/span&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp;  &lt;/form&gt;</pre><pre>  &lt;/div&gt;</pre></div><div class="CodeMirror-cursor" style="left: 66.5px; top: 838px; height: 15px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 863px;"></div><div class="CodeMirror-gutters" style="display: none; height: 863px;"></div></div></div></div></div><div class="playgroundPreview"><div><div data-reactroot=""><textarea style="display: none;">var NewComponent = React.createClass({
+  render: function() {
+    return (
+
+      &lt;div className="row"&gt;
+        &lt;form className="col s12"&gt;
+          &lt;div className="row"&gt;
+            &lt;div className="input-field col s6"&gt;
+              &lt;input placeholder="Placeholder" id="first_name" type="text" className="validate" /&gt;
+              &lt;label htmlFor="first_name"&gt;First Name&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div className="input-field col s6"&gt;
+              &lt;input id="last_name" type="text" className="validate" /&gt;
+              &lt;label htmlFor="last_name"&gt;Last Name&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div className="row"&gt;
+            &lt;div className="input-field col s12"&gt;
+              &lt;input disabled defaultValue="I am not editable" id="disabled" type="text" className="validate" /&gt;
+              &lt;label htmlFor="disabled"&gt;Disabled&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div className="row"&gt;
+            &lt;div className="input-field col s12"&gt;
+              &lt;input id="password" type="password" className="validate" /&gt;
+              &lt;label htmlFor="password"&gt;Password&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div className="row"&gt;
+            &lt;div className="input-field col s12"&gt;
+              &lt;input id="email" type="email" className="validate" /&gt;
+              &lt;label htmlFor="email"&gt;Email&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div className="row"&gt;
+            &lt;div className="col s12"&gt;
+              This is an inline input field:
+              &lt;div className="input-field inline"&gt;
+                &lt;input id="email_inline" type="email" className="validate" /&gt;
+                &lt;label htmlFor="email_inline"&gt;Email&lt;/label&gt;
+                &lt;span className="helper-text" data-error="wrong" data-success="right"&gt;Helper text&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    );
+  }
+});</textarea><div class="CodeMirror cm-s-solarized-light CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 82px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px; pointer-events: none;"><div style="height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="display: block; bottom: 0px; min-width: 18px; pointer-events: none;"><div style="width: 1px; height: 1015px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 1015px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><div style="width: 50px; height: 50px; overflow-x: scroll;"></div></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 78px; width: 594px; height: 15px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 933px; width: 93.75px; height: 15px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 93px; width: 594px; height: 840px;"></div></div><div class="CodeMirror-code" style=""><pre>var NewComponent = React.createClass({</pre><pre>  render: function() {</pre><pre> &nbsp;  return (</pre><pre>&nbsp;</pre><pre> &nbsp; &nbsp;  &lt;div className="row"&gt;</pre><pre> &nbsp; &nbsp; &nbsp;  &lt;form className="col s12"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;div className="row"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;div className="input-field col s6"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input placeholder="Placeholder" id="first_name" type="text" className="validate" /&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label htmlFor="first_name"&gt;First Name&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;div className="input-field col s6"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input id="last_name" type="text" className="validate" /&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label htmlFor="last_name"&gt;Last Name&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;div className="row"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;div className="input-field col s12"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input disabled defaultValue="I am not editable" id="disabled" type="text" className="validate" /&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label htmlFor="disabled"&gt;Disabled&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;div className="row"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;div className="input-field col s12"&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;input id="password" type="password" className="validate" /&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;label htmlFor="password"&gt;Password&lt;/label&gt;</pre><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;/div&gt;</pre><pre style="display: none;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;span className="helper-text" data-error="wrong" data-success="right"&gt;Helper text&lt;/span&gt;</pre></div><div class="CodeMirror-cursor" style="left: 97.75px; top: 420px; height: 15px; display: none;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 1015px;"></div><div class="CodeMirror-gutters" style="display: none; height: 1015px;"></div></div></div></div></div></div></div></div></div>
+    <script src="./HTML to JSX_files/react.min.js"></script>
+    <script src="./HTML to JSX_files/react-dom.min.js"></script>
+    <script src="./HTML to JSX_files/codemirror.min.js"></script>
+    <script src="./HTML to JSX_files/javascript.min.js"></script>
+    <script src="./HTML to JSX_files/create-react-class.min.js"></script>
+    <script src="./HTML to JSX_files/prop-types.min.js"></script>
+    <script src="./HTML to JSX_files/live_editor.js"></script>
+    <script src="./HTML to JSX_files/htmltojsx.min.js"></script>
+    <script src="./HTML to JSX_files/htmltojsx-component.js"></script>
+  </div>
+
+
+</body></html>

@@ -1,0 +1,358 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1E1E1E;
+  height: 100vh;
+  width: 100%;
+  border: solid 20px #141414
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+input, textarea {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.white-text {
+  color: #F9F9F9
+}
+
+.vert-align {
+  height: calc(100vh - 40px);
+  vertical-align: middle;
+  margin-top: 10%;
+}
+
+.under-name{
+  display: block;
+  position: relative;
+  background-color:#00FFCD;
+  width: 75px;
+  height: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.social-box {
+  width: 50px;
+  height: 50px;
+  border: solid #909090 2px;
+  margin-bottom: 0px;
+}
+
+.social-box:hover {
+  width: 50px;
+  height: 50px;
+  border: solid white 2px;
+  margin-bottom: 0px;
+}
+
+.social-wrapper {
+  right: 35px;
+  top: 35px;
+  position: absolute;
+}
+
+.linkedin {
+  background-image: url("LinkedInLogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  padding: 5px;
+}
+
+.linkedin:hover {
+  background-image: url("LinkedInLogo_white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  padding: 5px;
+}
+
+.github {
+  background-image: url("GitHubLogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  padding: 5px;
+}
+
+.github:hover {
+  background-image: url("GitHubLogo_white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  padding: 5px;
+}
+
+.social-box:hover .material-icons {
+  color: white
+}
+
+.social-box:hover .cv {
+  color: white
+}
+
+.email {
+  color: #909090;
+  font-size: 38px;
+  margin-top: 3px;
+}
+
+.email:hover {
+  color: white;
+  font-size: 38px;
+  margin-top: 3px;
+}
+
+
+.next-button {
+  width: 250px;
+  height: 50px;
+  border: solid #909090 2px;
+  cursor: pointer;
+}
+
+.next-text {
+  margin: 5px;
+  color: #909090;
+  margin-left: 25px;
+}
+
+.next-button:hover .next-text {
+  color: white;
+}
+
+.next-button:hover {
+  width: 250px;
+  height: 50px;
+  border: solid white 2px;
+  cursor: pointer;
+}
+
+.next-text:hover {
+  margin: 5px;
+  color: white;
+  margin-left: 25px;
+}
+
+.next-icon {
+  font-size: 35px;
+}
+
+.grey-text {
+  color: #909090;
+}
+
+.location {
+  font-size: 50px;
+}
+
+.location-wrapper {
+  text-align: center;
+  justify-content: center;
+}
+
+.cv {
+  font-weight: 900;
+  font-size: 25px;
+  margin-top: 11px;
+  color: #909090;
+}
+
+.cv:hover {
+  font-weight: 900;
+  font-size: 25px;
+  margin-top: 11px;
+  color: white;
+}
+
+
+.slider-control-centerleft, .slider-control-bottomcenter  { 
+  display: none !important
+}
+
+.slider-control-centerright {
+  position: fixed !important;
+  bottom: 55px !important;
+  right: 55px !important;
+  top: auto !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+.slider-list {
+  height: calc(100vh - 20px) !important;
+  bottom: 0px !important;
+}
+
+.slider-slide {
+  min-height: none !important;;
+}
+
+.bit-background {
+  height: 100vh;
+  left: 0px;
+}
+
+.bit-image {
+  background-image: url("bitcoin-sentiment.png");
+  height: calc(100vh - 40px);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  opacity: 0.50;
+  -moz-opacity: 50%;
+  -webkit-opacity: 50%;
+  z-index: 2;
+}
+
+.bit-image:hover {
+  background-image: url("bitcoin-sentiment.png");
+  height: calc(100vh - 40px);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  opacity: 1;
+  -moz-opacity: 100%;
+  -webkit-opacity: 100%;
+  z-index: 2;
+}
+
+.nwj-image {
+  background-image: url("networth-journal.png");
+  height: calc(100vh - 40px);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:left;
+  opacity: 0.50;
+  -moz-opacity: 50%;
+  -webkit-opacity: 50%;
+  z-index: 2;
+}
+
+.nwj-image:hover {
+  background-image: url("networth-journal.png");
+  height: calc(100vh - 40px);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:left;
+  opacity: 1;
+  -moz-opacity: 100%;
+  -webkit-opacity: 100%;
+  z-index: 2;
+}
+
+
+.portfolio-image-container {
+  padding: 0px !important;
+  background-color: #909090;
+  position: relative;
+  height: calc(100vh - 40px);
+}
+
+.portfolio-text-container {
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+}
+
+span.badge {
+  float: none;
+}
+
+span.badge.new {
+  border-radius: 0px;
+  padding: 5px;
+  line-height: 40px;
+  font-weight: 900;
+  color: black;
+  background-color:#00FFCD;
+}
+
+.website {
+  text-decoration: none;
+  color:#00D3FF
+}
+
+.yosemite-bg {
+  background-image: url("yosemite.JPG");
+  height: calc(100vh - 40px);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  opacity: 0.50;
+  -moz-opacity: 50%;
+  -webkit-opacity: 50%;
+  z-index: 2;
+}
+
+form {
+  z-index: 3;
+}
+
+.form-bg {
+  background-color: #1C1C1C;
+  margin-top: 8%;
+  width: 30%;
+}
+
+.form-padding {
+  padding: 35px;
+}
