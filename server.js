@@ -2,6 +2,7 @@ const express = require('express'),
 	app = express()
 
 const dev = app.get('env') !== 'production'
+const PORT = process.env.PORT || 8080
 
 app.listen(PORT,() => {
 	console.log("Listening on Port:%s",PORT)
