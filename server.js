@@ -4,11 +4,6 @@ const express = require('express'),
 const dev = app.get('env') !== 'production'
 const PORT = process.env.PORT || 8080
 
-app.listen(PORT,() => {
-	console.log("Listening on Port:%s",PORT)
-	console.log("Stop with Ctrl+C");
-});
-
 if (!dev) {
     console.log('Production')
     app.disable('x-powered-by')
