@@ -6,7 +6,7 @@ class NetworthJounal extends Component {
             <div className="white-text bit-background">
                 <div className="row">
                     <div className="col l6 portfolio-image-container">
-                    <a href="http://www.btcentiment.com">
+                    <a href="http://demo.networthjournal.io/">
                         <div className="nwj-image">
                         </div>
                     </a>
